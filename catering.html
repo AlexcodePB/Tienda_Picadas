@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>
+    Picada Bàrbara -¡Disfruta de las Mejores Picadas en la Ciudad!
+  </title>
+  <link rel="canonical" href="https://picadabarbara.com.ar" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width = device-width, initial-scale=1" />
+  <link rel="icon" href="/assets/LOGO/LOGOS Y SIMBOLOS REDES/logo sin fondo130x130.png" type="image/x-icon" />
+  <meta name="keywords"
+    content="picadas premium, eventos empresariales, regalos, picadas vegetarianas, tabla de quesos, tabla de fiambres, tabla de quesos y fiambres, catering, conservas, tabla de carnes, arrollado de pollo" />
+  <meta name="description"
+    content="Servicio de motomensajería confiable y rápido. Entregas puerta a puerta en tiempo récord, adaptadas a tus necesidades. ¡Confía en nosotros para tus envíos urgentes!" />
+  <meta name="author" content="Nestor Javier Buceta blackyDev" />
+  <meta name="copyright" content="Picada Bárbara" />
+  <meta name="robots" content="index" />
+  <meta name="language" content="español" />
+  <link rel="canonical" href="www.picadabarabara.com.ar" />
+
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- NAV -->
+
+  <div class="container-fluid navbar-contain fixed-top" id="navbar">
+    <div class="row">
+      <nav class="navbar navbar-expand-md text-center">
+        <div class="col-12 col-md-2">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/logo/logos y simbolos redes/logo sin fondo.png" alt="logo Picada"
+              class="img-fluid nav-logo" title="logo-pb" />
+          </a>
+        </div>
+        <div class="col-12 col-md-3 p-3 p-md-0 me-md-3">
+          <form class="form-group d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="searchInput" />
+            <button class="btn btn-search search-input-submit" aria-label="Buscar" type="submit">
+              <img src="assets/iconos/catalejo (1).png" class="img-fluid search-icon" alt="search" title="busqueda" />
+            </button>
+          </form>
+          <div class="position-absolute text-center searchSuggestions" id="searchSuggestions">
+            <div class="card list-cont-search">
+              <ul class="list-group list-group-flush">
+                <!-- Aquí se agregarán dinámicamente las sugerencias de búsqueda -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button class="navbar-barco ms-3 mt-3 mb-3 d-md-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <img src="assets/iconos/barco (1).png" alt="barco" title="barco" class="img-fluid barco-icon d-md-none" />
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarNav">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menú</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body mt-5 mt-md-0">
+            <ul class="navbar-nav d-flex justify-content-around mb-md-2">
+              <li class="nav-item dropdown mt-5 mt-md-0">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  id="martilloToggle">
+                  <img src="assets/iconos/martillo.png" alt="martillo" class="img-fluid martillo-icon martillo-icon"
+                    title="martillo" id="martilloIcon" />
+                  Categorías
+                </a>
+                <ul class="dropdown-menu" id="dropdownMenu">
+                  <li>
+                    <a class="dropdown-item" href="picadas-y-sanguchitos.html">
+                      <img src="assets/iconos/tabla-de-quesos.png" alt="picada" class="picada-icon"
+                        title="tabla de quesos" />
+                      Picadas y Sanguchitos
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="conservas.html">
+                      <img src="assets/iconos/conserva.png" alt="conserva" title="frasco de conservas"
+                        class="img-fluid conserva-icon" />
+                      Conservas
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="eventos-regalos.html">
+                      <img src="assets/iconos/calendario.png" alt="eventos-y-regalos"
+                        title="calendario eventos y regalos" class="img-fluid regalo-icon" />
+                      Eventos y Regalos
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="catering.html">
+                      <img src="assets/iconos/abastecimiento.png" alt="catering" title="catering"
+                        class="img-fluid catering-icon" />
+                      Catering
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mt-5 mt-md-0">
+                <a class="nav-link" aria-current="page" href="index.html">
+                  <img src="assets/iconos/castillo.png" alt="castillo" title="Inicio" class="img-fluid castillo-icon" />
+                  Inicio
+                </a>
+              </li>
+              <li class="nav-item mt-5 mt-md-0">
+                <a class="nav-link" href="zonas-envio.html">
+                  <img src="assets/iconos/mapa.png" alt="mapa" title="zonas de envio" class="img-fluid mapa-icon" />
+                  Zonas de envío
+                </a>
+              </li>
+              <li class="nav-item mt-5 mt-md-0">
+                <a class="nav-link" href="contacto.html"><img src="assets/iconos/mensaje.png" alt="contacto"
+                    title="contacto" class="img-fluid contacto-icon" />
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-1 mt-3 mb-3 mb-md-4" data-bs-toggle="modal" data-bs-target="#registroModal">
+          <span class="cursor-cart-nav">
+            <img src="assets/iconos/vikingo (2).png" alt="registro" title="registro"
+              class="img-fluid vikingo-register" />
+          </span>
+        </div>
+
+        <div class="icon-cart-contain col-md-1 me-3 mt-3 mb-3 mb-md-4" data-bs-toggle="modal"
+          data-bs-target="#cartModal">
+          <span class="cursor-cart-nav">
+            <img src="assets/iconos/bolsa-de-la-compra.png" alt="carrito" title="carrito" class="img-fluid cart" />
+            <img src="assets/iconos/casco-vikingo (2).png" alt="casco-vikingo" title="carrito casco vikingo"
+              class="overlay-icon" />
+            <span class="cart-count">0</span>
+          </span>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Modal  registro-->
+
+  <div class="modal modal-sheet" tabindex="-1" role="dialog" id="registroModal" aria-labelledby="registroModalLabel">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Registrate</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com" />
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password" />
+              <label for="floatingPassword">Contraseña</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">
+              Registrarse
+            </button>
+            <hr class="my-4" />
+            <h2 class="fs-5 fw-bold mb-3 text-center">
+              O usa una de estas tres formas
+            </h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#twitter"></use>
+              </svg>
+              Registrarse con Gmail
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#facebook"></use>
+              </svg>
+              registrarse con Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16">
+                <use xlink:href="#github"></use>
+              </svg>
+              Registrarse con Instagram
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de navBar carrito -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="cart-cont">
+            <div class="row"></div>
+          </div>
+          <p class="cart-total">Total: $0</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner presentacion -->
+
+  <div class="container-fluid banner-presentacion-cont">
+    <div class="row">
+      <div class="col">
+        <div class="cont-title-banner-presentacion">
+          <h2 class="banner-title">Catering</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Productos -->
+
+  <div class="container prod-cont">
+    <div class="row mt-5 mb-5" data-category="D"></div>
+
+    <!-- Modal detalle de prod -->
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModalLabel">
+              Detalles del Producto
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <!-- Las imágenes se cargarán aquí dinámicamente -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 id="productName" class="card-title"></h5>
+                    <p id="productIngredients" class="card-text"></p>
+                    <p id="productPrice" class="card-text"></p>
+                    <div class="input-group mb-3">
+                      <button class="btn btn-outline-secondary" type="button" id="decrementQuantity">
+                        -
+                      </button>
+                      <input type="text" id="quantity" class="form-control text-center" value="1" />
+                      <button class="btn btn-outline-secondary" type="button" id="incrementQuantity">
+                        +
+                      </button>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="addToCart()">
+                      Agregar al carrito
+                    </button>
+                    <button type="button" class="btn btn-success">
+                      Comprar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de confirmación de agregar al carrito -->
+
+  <div class="modal fade" id="addToCartModal" tabindex="-1" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <h5 class="modal-title" id="addToCartModalLabel">
+            Producto agregado al carrito
+          </h5>
+        </div>
+        <div class="modal-body">
+          <div class="card">
+            <div class="row">
+              <div class="col-2">
+                <img src="assets/iconos/compras custom.png" alt="compra-exitosa"
+                  class="img-fluid niña-compra-exitosa" />
+              </div>
+              <div class="col-10">
+                <p>¡El producto ha sido agregado correctamente al carrito!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer class="container-fluid backg-foot">
+    <!--Info empresarial-->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-5 text-center text-md-start">
+            <h2 class="foot-title">escribinos</h2>
+
+            <div class="container p-0 mt-4">
+              <div class="social-link">
+                <a href="https://www.facebook.com/picadabarbaraa" target="_blank" class="footer-links facebook"
+                  title="facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/picadabarbara" target="_blank" class="footer-links instagram"
+                  title="instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://wa.me/541150529864" target="_blank" class="footer-links whatsapp" title="whatsapp">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4">
+              <a class="foot-mail" title="mail" href="mailto:contacto@picadabarbara.com.ar"
+                target="_blank">contacto@picadabarbara.com.ar</a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center mt-5">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/logo/logos y simbolos redes/logo sin fondo.png" alt="logo Picada"
+                class="img-fluid nav-logo-foot" title="logo-pb" />
+            </a>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <ul class="d-flex flex-column nav-footer align-items-center align-items-md-end p-0">
+              <li class="nav-item-foot">
+                <a href="categorias.html" class="nav-link-foot p-0">Categorias</a>
+              </li>
+              <li class="nav-item-foot mt-3">
+                <a href="contacto.html" class="nav-link-foot p-0">Contacto</a>
+              </li>
+              <li class="nav-item-foot mt-3">
+                <a href="zonas-envio.html" class="nav-link-foot p-0">Zonas de envío</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Legal-->
+
+    <section>
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="d-none d-sm-none d-md-block col-md-6 text-copiright-2 mt-md-5">
+            <p>Designed by <span class="blackyDev">blackyDev</span></p>
+          </div>
+
+          <div class="col-md-6 col-sm-12 text-copiright-1 mt-3 mt-md-5">
+            <p class="text-md-end">
+              © Copyright Picada Bárbara. All Rights Reserved
+            </p>
+          </div>
+
+          <div class="d-sm-block d-md-none col-sm-12 text-copiright-2 mt-3 mt-3">
+            <p>Designed by <span class="blackyDev">blackyDev</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="./script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
